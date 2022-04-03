@@ -1,0 +1,53 @@
+﻿@model PrjWebInss.Models.ParametroAliquota
+
+@{
+    ViewData["Title"] = "Inserir novo parametro";
+}
+
+<h1>Inserir novo parametro</h1>
+
+<h4>Parametros de Alíquotas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalCntrMin" class="control-label"></label>
+                <input asp-for="SalCntrMin" class="form-control" />
+                <span asp-validation-for="SalCntrMin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalCntrMax" class="control-label"></label>
+                <input asp-for="SalCntrMax" class="form-control" />
+                <span asp-validation-for="SalCntrMax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValAlqt" class="control-label"></label>
+                <input asp-for="ValAlqt" class="form-control" />
+                <span asp-validation-for="ValAlqt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ano" class="control-label"></label>
+                <input asp-for="Ano" class="form-control" />
+                <span asp-validation-for="Ano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retornar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

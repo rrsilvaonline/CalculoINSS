@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "INSS", "INSS\INSS.csproj", "{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrgCalculoINSS", "PrgCalculoINSS\PrgCalculoINSS.csproj", "{1875E737-1C46-4D5B-88C4-C8A66DB6A372}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13} = {C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17F4A59-46F8-4D1A-A4E0-56A9FF163D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1875E737-1C46-4D5B-88C4-C8A66DB6A372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1875E737-1C46-4D5B-88C4-C8A66DB6A372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1875E737-1C46-4D5B-88C4-C8A66DB6A372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1875E737-1C46-4D5B-88C4-C8A66DB6A372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F272AF6E-6BC4-47A0-A6E2-F7D57CFD8FA0}
+	EndGlobalSection
+EndGlobal

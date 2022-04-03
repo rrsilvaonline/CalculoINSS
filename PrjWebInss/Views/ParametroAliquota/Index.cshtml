@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PrjWebInss.Models.ParametroAliquota>
+
+@{
+    ViewData["Title"] = "Parametros de Calculo";
+}
+
+<h1>Parametros para calculo do INSS</h1>
+
+<p>
+    <a asp-action="Create">Inserir Nono parametro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalCntrMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalCntrMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValAlqt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalCntrMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalCntrMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValAlqt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
